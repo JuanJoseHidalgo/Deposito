@@ -4,7 +4,7 @@ package cuentas;
  * @author Juan José Hidalgo Neira
  * 
  * O repositorio de Github está en
- * @see https://github.com/JuanJoseHidalgo/Deposito
+ * https://github.com/JuanJoseHidalgo/Deposito
  * 
  */
 
@@ -23,10 +23,10 @@ public class CCuenta {
 
     /** Constructor da clase CCuenta
      * ten os seguintes parámetros:
-     * @param nom
-     * @param cue
-     * @param sal
-     * @param tipo 
+     * @param nom nome
+     * @param cue cuenta
+     * @param sal saldo
+     * @param tipo tipo
      * 
      */
     
@@ -51,7 +51,7 @@ public class CCuenta {
     
     /** Método para ingresar
      * 
-     * @param cantidad
+     * @param cantidad cantidade
      * @throws Exception 
      * 
      */
@@ -83,7 +83,7 @@ public class CCuenta {
     /**
      * Getter do nombre
      * 
-     * @return nombre
+     * @return nombre nome
      */
     
     public String getNombre() {
@@ -94,7 +94,7 @@ public class CCuenta {
     /**
      * Setter do nombre
      * 
-     * @param nombre
+     * @param nombre nome
      */
     
     public void setNombre(String nombre) {
@@ -105,7 +105,7 @@ public class CCuenta {
     /**
      * Getter de cuenta
      * 
-     * @return cuenta
+     * @return cuenta conta
      */
     
     public String getCuenta() {
@@ -116,7 +116,7 @@ public class CCuenta {
     /**
      * Setter de cuenta
      * 
-     * @param cuenta 
+     * @param cuenta conta
      */
     
     public void setCuenta(String cuenta) {
@@ -127,7 +127,7 @@ public class CCuenta {
     /**
      * Getter de saldo
      * 
-     * @return saldo
+     * @return saldo saldo
      */
     
     public double getSaldo() {
@@ -138,7 +138,7 @@ public class CCuenta {
     /**
      * Setter de saldo
      * 
-     * @param saldo 
+     * @param saldo saldo
      */
     
     public void setSaldo(double saldo) {
@@ -149,7 +149,7 @@ public class CCuenta {
     /**
      * Getter de tipoInterés
      * 
-     * @return tipoInterés
+     * @return tipoInterés tipo de Interese
      */
     
     public double getTipoInterés() {
@@ -159,7 +159,7 @@ public class CCuenta {
     /**
      * Setter de tipoInterés
      * 
-     * @param tipoInterés 
+     * @param tipoInterés Tipo de Interese
      */
     
     public void setTipoInterés(double tipoInterés) {
