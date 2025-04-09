@@ -1,4 +1,13 @@
 package cuentas;
+/** A clase CCuenta, replica o funcionamento das contas bancarias
+ * 
+ * @author Juan José Hidalgo Neira
+ * 
+ * O repositorio de Github está en
+ * @see https://github.com/JuanJoseHidalgo/Deposito
+ * 
+ */
+
 public class CCuenta {
    
 
@@ -12,6 +21,15 @@ public class CCuenta {
     {
     }
 
+    /** Constructor da clase CCuenta
+     * ten os seguintes parámetros:
+     * @param nom
+     * @param cue
+     * @param sal
+     * @param tipo 
+     * 
+     */
+    
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
@@ -19,11 +37,25 @@ public class CCuenta {
         saldo=sal;
     }
 
+    /** Método para obter o saldo
+     * 
+     * @return getSaldo()
+     * 
+     */
+    
     public double estado()
     {
         return getSaldo();
     }
 
+    
+    /** Método para ingresar
+     * 
+     * @param cantidad
+     * @throws Exception 
+     * 
+     */
+    
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
@@ -31,6 +63,14 @@ public class CCuenta {
         setSaldo(getSaldo() + cantidad);
     }
 
+    
+    /** Método para retirar
+     * 
+     * @param cantidad
+     * @throws Exception
+     * 
+     */
+    
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)
@@ -41,57 +81,87 @@ public class CCuenta {
     }
 
     /**
-     * @return the nombre
+     * Getter do nombre
+     * 
+     * @return nombre
      */
+    
     public String getNombre() {
         return nombre;
     }
 
+
     /**
-     * @param nombre the nombre to set
+     * Setter do nombre
+     * 
+     * @param nombre
      */
+    
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    
     /**
-     * @return the cuenta
+     * Getter de cuenta
+     * 
+     * @return cuenta
      */
+    
     public String getCuenta() {
         return cuenta;
     }
 
+    
     /**
-     * @param cuenta the cuenta to set
+     * Setter de cuenta
+     * 
+     * @param cuenta 
      */
+    
     public void setCuenta(String cuenta) {
         this.cuenta = cuenta;
     }
 
+    
     /**
-     * @return the saldo
+     * Getter de saldo
+     * 
+     * @return saldo
      */
+    
     public double getSaldo() {
         return saldo;
     }
 
+    
     /**
-     * @param saldo the saldo to set
+     * Setter de saldo
+     * 
+     * @param saldo 
      */
+    
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
+    
     /**
-     * @return the tipoInterés
+     * Getter de tipoInterés
+     * 
+     * @return tipoInterés
      */
+    
     public double getTipoInterés() {
         return tipoInterés;
     }
 
     /**
-     * @param tipoInterés the tipoInterés to set
+     * Setter de tipoInterés
+     * 
+     * @param tipoInterés 
      */
+    
     public void setTipoInterés(double tipoInterés) {
         this.tipoInterés = tipoInterés;
     }
